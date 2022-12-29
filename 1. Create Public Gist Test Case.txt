@@ -1,0 +1,805 @@
+ID: CG-01
+
+Description: User can't create gist while not signed in/unregistered account/inactive session
+
+Feature: Create
+
+Type: Negative
+
+Pre-condition: -
+
+Test Steps: 
+1. Go to link https://gist.github.com/
+
+Data Input: -
+
+Expected Result:
+1. Direct to Gist Github Discover
+2. User can not create Gist 
+3. Create Gist feauture isn't appearead
+4. Only shows feature of Sign in, Sign Up, Search Gist, Gist Posted
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-02
+
+Description: User can click "+" on Github Homepage to be directed to create gist page after signed in
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-03
+
+Description: User can't be directed to create Gist page without clicking "+" and "New gist"
+
+Feature: Create
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Logged in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click "Sign in" on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click Sign in button and directed to Github Homepage
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-04
+
+Description: User can fill gist description, file name, and gist content text field with any character
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Input gist description
+9. Input file name
+10. Input gist content
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist description: xyz12 |<>?"|~!@#$%^&*
+4. Gist file name: xyz12 |<>?"|~!@#$%^&*
+5. Gist content: xyz12 |<>?"|~!@#$%^&*
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Gist description text field can be filled with any character
+9. File name text field can be filled with any character
+10. Gist content text field can be filled with any character
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-05
+
+Description: User can apply one of the indent mode for gist content
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Click indent mode dropdown option (on the right of file name text field)
+9. Click "Spaces" or "Tabs"
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Indent mode: Spaces
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Appear a clickable list option (Spaces and Tabs) after clicking indent mode dropdown option
+9. Gist content indent mode is adjusted to the chosen option (Spaces or Tabs)
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-06
+
+Description: User can apply one of the indent size for gist content
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Click indent size dropdown option (on the right of indent mode)
+9. Click "2" or "4" or "8"
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Indent size: 4
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Appear a clickable list option (2, 4, and 8) after clicking indent size dropdown option
+9. Gist content indent size is adjusted to the chosen option (2/4/8)
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-07
+
+Description: User can apply one of the line wrap mode for gist content
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Click line wrap mode dropdown option (on the right of indent size)
+9. Click "No wrap" or "Soft wrap"
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Line wrap mode: Soft wrap
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Appear a clickable list option (No wrap and Soft wrap) after clicking line wrap mode dropdown option
+9. Gist content line wrap mode is adjusted to the chosen option (No wrap or Soft wrap)
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-08
+
+Description: User failed to create gist when the gist content is empty
+
+Feature: Create
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Click "Create secret gist" or "Create public gist" button
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. A red box warning message "Contents can't be empty" appear on the top page after clicking "Create secret gist" or "Create public gist" button 
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-09
+
+Description: User can click the dropdown button to choose "Create secret gist" or "Create public gist"
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on Github Homepage
+7. Click "New gist"
+8. Click green dropdown button on the bottom right page
+9. Click "Create public gist" or "Create secret gist" 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist content: Test scenario for creating gist
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Appear list option with description of "Create secret gist" and "Create public gist" after clicking the green dropdown button
+9. "Create secret gist" and "Create public gist" can be clicked
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-10
+
+Description: User can click "Add file" button to add another gist field under the same description on the same page
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on Github homepage
+7. Click "New gist"
+8. Click "Add file" button on the bottom left create gist page
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Appear another gist field (file name field, gist content field, option for: indent mode, indent size, line wrappinh) on the same page after clicking "Add file" button
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-11
+
+Description: User can click "Red bin" icon to delete a gist field under the same description on the same page
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on Github homepage
+7. Click "New gist"
+8. Click "Add file" button on the bottom left create gist page
+9. Click "Red bin" icon on the right of file name field
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Appear another gist field (file name field, gist content field, option for: indent mode, indent size, line wrappinh) on the same page after clicking "Add file" button
+9. The gist field is deleted after clicking the "Red bin" icon
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-12
+
+Description: User can't click "Red bin" icon if there is only one gist field under a gist description
+
+Feature: Create
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on Github homepage
+7. Click "New gist"
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page without a "Red bin" icon after clicking "New gist" in dropdown menu
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-13
+
+Description: User failed to create gist when there's an empty gist content in >1 gist field under the same description
+
+Feature: Create
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Input Gist content field (1)
+9. Click "Add file" button on the bottom left create gist page
+10. Click "Create secret gist" or "Create public gist" button
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist content field (1): Test case gist creation
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Gist content field can be filled with any character
+9. Appear another gist field (file name field, gist content field, option for: indent mode, indent size, line wrappinh) on the same page after clicking "Add file" button
+10. A red box warning message "Contents can't be empty" appear on the top page after clicking "Create secret gist" or "Create public gist" button 
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-14
+
+Description: User can create public gist with empty description and file name, but filled content
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Input gist content
+9. Click green dropdown button and choose "Create public gist"
+10. Click "Create public gist" button
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist content: Test scenario for creating gist
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Gist content field can be filled
+9. Clickable list options of "Create secret gist" and "Create public gist" appear after clicking the green dropdown button
+10. Public gist is created and user is directed to the current gist page with generated description and file name after clicking "Create public gist" button
+11. Anyone can access the public gist created
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-15
+
+Description: User can create public gist with filled description, file name, and content
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Input gist description
+9. Input gist file name
+10. Input gist content
+11. Click green dropdown button and choose "Create public gist"
+12. Click "Create public gist" button
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist description: Gist Test Case
+4. Gist file name: Create Gist.txt
+5. Gist content: Test scenario for creating gist
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Gist description field can be filled with any character
+9. Gist file name field can be filled with any character
+10. Gist content field can be filled with any character
+11. Clickable list options of "Create secret gist" and "Create public gist" appear after clicking the green dropdown button
+12. Public gist is created and user is directed to the current gist page after clicking "Create public gist" button
+13. Anyone can access the public gist created
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-16
+
+Description: User can't create public gist if "Create public gist" button is not clicked
+
+Feature: Create
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Input gist description
+9. Input gist file name
+10. Input gist content
+11. Click green dropdown button and choose "Create public gist"
+
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist description: Gist Test Case
+4. Gist file name: Create Gist.txt
+5. Gist content: Test scenario for creating gist
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Gist description field can be filled with any character
+9. Gist file name field can be filled with any character
+10. Gist content field can be filled with any character
+11. Clickable list options of "Create secret gist" and "Create public gist" appear after clicking the green dropdown button
+12. Public gist isn't created and user isn't directed to the current gist page without clicking "Create public gist" button
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-17
+
+Description: User can't create public gist if "Create public gist" option is not chosen
+
+Feature: Create
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click icon '+' on header page
+7. Click "New gist"
+8. Input gist description
+9. Input gist file name
+10. Input gist content
+11. Click green dropdown button and choose "Create secret gist"
+
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist description: Gist Test Case
+4. Gist file name: Create Gist.txt
+5. Gist content: Test scenario for creating gist
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking "+" on Github Homepage
+7. Directed to create Gist page after clicking "New gist" in dropdown menu
+8. Gist description field can be filled with any character
+9. Gist file name field can be filled with any character
+10. Gist content field can be filled with any character
+11. Clickable list options of "Create secret gist" and "Create public gist" appear after clicking the green dropdown button
+12. Secret gist is created and user is directed to the current secret gist page if choosing and clicking "Create secret gist" button
+13. Only the one who has link can see the secret gist
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -

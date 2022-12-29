@@ -1,0 +1,230 @@
+ID: CG-34
+
+Description: User can't delete gist while not signed in/unregistered account/inactive session
+
+Feature: Delete
+
+Type: Negative
+
+Pre-condition: -
+
+Test Steps: 
+1. Go to link https://gist.github.com/
+
+Data Input: -
+
+Expected Result:
+1. Direct to Gist Github Discover
+2. User can not create Gist 
+3. Edit Gist feauture isn't appearead
+4. Only shows feature of Sign in, Sign Up, Search Gist, Gist Posted
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-35
+
+Description: User can't delete gist if no gist is created
+
+Feature: Delete
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. User can't delete gist
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-36
+
+Description: User can delete gist if there is at least 1 gist (public or secret) created
+
+Feature: Delete
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Delete" button on the gist page
+10. Click "OK" button on the pop-up message
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist name: xyz
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Appear pop-up message "Are you positive you want to delete this Gist?" after clicking "Delete" button on the gist page
+10. Gists under the same description is deleted after clicking "OK" button on the pop-up message
+11. User is directed to "Your gist" page with message on the top "Gist deleted successfully."
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-37
+
+Description: User can't delete gist if "OK" button isn't clicked on the pop-up message
+
+Feature: Delete
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+4. "Delete" button is clicked
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Delete" button on the gist page
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist name: xyz
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Appear pop-up message "Are you positive you want to delete this Gist?" after clicking "Delete" button on the gist page
+10. Gist is not deleted if not clicking "OK" button on the pop-up message
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-38
+
+Description: User can't delete gist if user click "Cancel" button on the pop-up message
+
+Feature: Delete
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+4. "Delete" button is clicked
+5. "Cancel" button on the pop-up message is clicked
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Delete" button on the gist page
+10. Click "Cancel" button on the pop-up message
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist name: xyz
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Appear pop-up message "Are you positive you want to delete this Gist?" after clicking "Delete" button on the gist page
+10. Gist is not deleted if "Cancel" button is clicked on the pop-up message
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------

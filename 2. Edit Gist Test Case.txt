@@ -1,0 +1,793 @@
+ID: CG-18
+
+Description: User can't edit gist while not signed in/unregistered account/inactive session
+
+Feature: Edit
+
+Type: Negative
+
+Pre-condition: -
+
+Test Steps: 
+1. Go to link https://gist.github.com/
+
+Data Input: -
+
+Expected Result:
+1. Direct to Gist Github Discover
+2. User can not create Gist 
+3. Edit Gist feauture isn't appearead
+4. Only shows feature of Sign in, Sign Up, Search Gist, Gist Posted
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-19
+
+Description: User can click "Your gists" in the dropdown profile option to be directed to "Your gist" page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. User is directed to your gists page after clicking "Your gists" in dropdown profile option
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-20
+
+Description: User can't edit gist if no gist is created
+
+Feature: Edit
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. User can't edit gist
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-21
+
+Description: User can edit gist if there is at least 1 gist (public or secret) created
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist name: xyz
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Directed to the edit gist page after clicking "Edit" button on the gist page
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-22
+
+Description: User can change gist description, file name, and gist content on the gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Change gist description
+11. Change gist file name
+12. Change gist content
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist description: xyz -> Test123 !@#$
+4. Gist file name: xyz -> Test123 !@#$
+5. Gist content: xyz -> Test123 !@#$
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the gist page
+10. Gist description can be edited using any character
+11. Gist file name can be edited using any character
+12. Gist content can be edited using any character
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-23
+
+Description: User can change indent mode, indent size, and line wrap mode on the gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Change indent mode
+11. Change indent size
+12. Change line wrap mode
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Indent mode: Spaces -> Tabs
+4. Indent size: 2 -> 4 or 8
+5. Line wrap mode: No wrap -> Soft wrap
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the gist page
+10. Indent mode can be changed to another option
+11. Indent size can be changed to another option
+12. Line wrap mode can be changed to another option
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-24
+
+Description: User can click "Add file" button to add another gist file under the same description on the gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Click "Add file" button 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the gist page
+10. Another gist field added after clicking "Add file" button
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-25
+
+Description: User can click "Red bin" icon to delete a gist file under the same description on the gist edit page
+
+Feature: Create
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+4. Another gist file is added under the same description
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Click "Add file" button 
+11. Click "Red bin" icon on the right of file name field
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the gist page
+10. Another gist field added after clicking "Add file" button
+11. The gist field is deleted after clicking the "Red bin" icon
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-26
+
+Description: User can't click "Red bin" icon if there is only one gist file under a gist description on the gist edit page
+
+Feature: Create
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking gist name on "Your gists" page
+9. Directed to edit gist page without "Red bin" icon (if there is only one gist file) after clicking "Edit" button on the gist page
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-27
+
+Description: User can click "Make public" button to change secret gist into public gist on the secret gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 secret gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click secret gist name in "Your gists" page
+9. Click "Edit" button on the secret gist page
+10. Click "Make public" button 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the secret gist page after clicking secret gist name on "Your gists" page
+9. Directed to edit secret gist page after clicking "Edit" button on the secret gist page
+10. Secret gist is changed into public gist and user is directed to the gist page after clicking "Make public" button 
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-28
+
+Description: User can click "Update public gist" or "Update secret gist" button (regardless any change was made or not) on the gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Click "Update public gist" or "Update secret gist" button 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking secret gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the secret gist page
+10. Directed to the gist page after clicking "Update public gist" or "Update secret gist" button regardless any change was made or not
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-29
+
+Description: User failed to update gist when there is newly added gist file with empty content on the gist edit page
+
+Feature: Edit
+
+Type: Negative
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+4. Added newly gist file with empty content
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Click "Add file" button
+11. Click "Update public gist" or "Update secret gist" button 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking secret gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the secret gist page
+10. New gist file with empty content is added after clicking "Add file" button
+11. A red box warning message "Contents can't be empty" appear on the top page after clicking "Update public gist" or "Update secret gist"
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-30
+
+Description: Public gist or Secret gist is updated to the latest change made after clicking "Update public gist" or "Update secret gist" button (if there is any change) on the gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Change the gist content
+11. Click "Update public gist" or "Update secret gist" button 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist content: xyz -> 123 xy!@#
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking secret gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the secret gist page
+10. Gist content field can be edited using any character
+11. Gist is updated to the latest change and user directed to the gist page after clicking "Update public gist" or "Update secret gist"
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-31
+
+Description: User can click "Cancel" button to unsave the change made on the gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Change the gist content
+11. Click "Cancel" button 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+3. Gist content: xyz -> 123 xy!@#
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking secret gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the secret gist page
+10. Gist content field can be edited using any character
+11. Gist is not updated to the change made and user is directed to the gist page after clicking "Cancel" button
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-32
+
+Description: Notification number on the "Revision" tab is increased +1 everytime "Update public gist" or "Update secret gist" button is clicked on the gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Click "Update public gist" or "Update secret gist" button 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking secret gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the secret gist page
+10. Directed to the gist page after clicking "Update public gist" or "Update secret gist" button regardless any change was made or not
+11. Notification number on the "Revision" tab is increased +1 everytime "Update public gist" or "Update secret gist" button is clicked on the gist edit page
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
+ID: CG-33
+
+Description: Notification number on the "Revision" tab is not increased after "Cancel" button is clicked on the gist edit page
+
+Feature: Edit
+
+Type: Positive
+
+Pre-condition:
+1. Account must be registered on github
+2. Signed in succesfully
+3. At least 1 gist is created
+
+Test Steps: 
+1. Go to link https://github.com/
+2. Click Sign in on header page
+3. Input registered username or email
+4. Input password
+5. Click "Sign in" button
+6. Click profile dropdown icon
+7. Click "Your gists"
+8. Click gist name in "Your gists" page
+9. Click "Edit" button on the gist page
+10. Click "Cancel" button 
+
+Data Input:
+1. Username: Wigu19
+2. Password: Wigu19
+
+Expected Result:
+1. Directed to Github Homepage
+2. User can click "Sign in" and directed to Sign in page
+3. User can input username or email
+4. User can input password
+5. User can click "Sign in" button and directed to Github Homepage with "+" icon appeared
+6. Appear dropdown menu after clicking profile dropdown icon on Github Homepage
+7. Directed to your gists page with "No gists" message after clicking "Your gists" in dropdown menu
+8. Directed to the gist page after clicking secret gist name on "Your gists" page
+9. Directed to edit gist page after clicking "Edit" button on the secret gist page
+10. Gist is not updated to the change made and user is directed to the gist page after clicking "Cancel" button
+11. Notification number on the "Revision" tab is not increased everytime "Cancel" button is clicked on the gist edit page
+
+Actual Result: -
+
+Test Date: -
+
+Plattform: Web, Chrome 108, Windows 11 
+
+Status: -
+
+----------------------------------------------------------------------------------------------------------------------------------------
